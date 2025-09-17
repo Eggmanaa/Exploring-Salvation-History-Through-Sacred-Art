@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { serveStatic } from 'hono/cloudflare-workers'
-import { typologies, getTypologyById, sections } from './data/typologies'
+import { typologies, getTypologyById, categories } from './data/typologies-enhanced'
 
 const app = new Hono()
 
@@ -14,7 +14,7 @@ app.use('/favicon.ico', serveStatic({ root: './public' }))
 
 // API Routes
 app.get('/api/typologies', (c) => {
-  return c.json({ typologies, sections })
+  return c.json({ typologies, categories })
 })
 
 app.get('/api/typology/:id', (c) => {
@@ -86,7 +86,6 @@ app.get('/', (c) => {
                     </div>
                     <div class="hidden md:flex space-x-8">
                         <a href="#home" class="nav-link font-crimson text-ivory hover:text-gold transition-colors">Introduction</a>
-                        <a href="#timeline" class="nav-link font-crimson text-ivory hover:text-gold transition-colors">Timeline</a>
                         <a href="#typologies" class="nav-link font-crimson text-ivory hover:text-gold transition-colors">Typologies</a>
                         <a href="#about" class="nav-link font-crimson text-ivory hover:text-gold transition-colors">About</a>
                     </div>
@@ -100,7 +99,6 @@ app.get('/', (c) => {
             <div id="mobile-menu" class="md:hidden hidden bg-midnight/95 border-t border-gold/30">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <a href="#home" class="block px-3 py-2 font-crimson text-ivory hover:text-gold">Introduction</a>
-                    <a href="#timeline" class="block px-3 py-2 font-crimson text-ivory hover:text-gold">Timeline</a>
                     <a href="#typologies" class="block px-3 py-2 font-crimson text-ivory hover:text-gold">Typologies</a>
                     <a href="#about" class="block px-3 py-2 font-crimson text-ivory hover:text-gold">About</a>
                 </div>
@@ -164,9 +162,9 @@ app.get('/', (c) => {
                         <i class="fas fa-book-open mr-2"></i>
                         Explore Typologies
                     </button>
-                    <button onclick="scrollToSection('timeline')" class="px-8 py-3 border-2 border-gold text-gold font-cinzel font-semibold rounded-lg hover:bg-gold hover:text-midnight transition-all transform hover:scale-105">
-                        <i class="fas fa-hourglass-half mr-2"></i>
-                        View Timeline
+                    <button onclick="scrollToSection('intro')" class="px-8 py-3 border-2 border-gold text-gold font-cinzel font-semibold rounded-lg hover:bg-gold hover:text-midnight transition-all transform hover:scale-105">
+                        <i class="fas fa-scroll mr-2"></i>
+                        Learn More
                     </button>
                 </div>
             </div>
@@ -223,46 +221,32 @@ app.get('/', (c) => {
             </div>
         </section>
 
-        <!-- Timeline Section -->
-        <section id="timeline" class="py-20 bg-gradient-to-b from-burgundy/20 to-midnight">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="font-cinzel text-3xl md:text-4xl text-gold mb-4">Journey Through Salvation</h2>
-                    <div class="w-32 h-1 bg-gold mx-auto"></div>
-                </div>
-                
-                <div class="relative">
-                    <!-- Timeline Line -->
-                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gold/30"></div>
-                    
-                    <!-- Timeline Items -->
-                    <div class="space-y-12" id="timeline-container">
-                        <!-- Timeline items will be dynamically inserted here -->
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <!-- Typologies Gallery Section -->
         <section id="typologies" class="py-20 bg-gradient-to-b from-midnight to-burgundy/20">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="text-center mb-12">
-                    <h2 class="font-cinzel text-3xl md:text-4xl text-gold mb-4">The 30 Typologies</h2>
+                    <h2 class="font-cinzel text-3xl md:text-4xl text-gold mb-4">Biblical Typologies</h2>
+                    <p class="font-crimson text-ivory text-lg mb-6">Exploring the Divine Plan Through Sacred Prefigurements</p>
                     <div class="w-32 h-1 bg-gold mx-auto mb-8"></div>
                     
                     <!-- Section Filters -->
                     <div class="flex flex-wrap justify-center gap-4 mb-8">
                         <button onclick="filterTypologies('all')" class="filter-btn active px-6 py-2 font-cinzel text-sm bg-gold text-midnight rounded-full">
-                            All Typologies
+                            <i class="fas fa-infinity mr-2"></i>All Typologies
                         </button>
-                        <button onclick="filterTypologies('Creation and Patriarchs')" class="filter-btn px-6 py-2 font-cinzel text-sm border-2 border-gold text-gold rounded-full hover:bg-gold hover:text-midnight">
-                            Creation & Patriarchs
+                        <button onclick="filterTypologies('Christological')" class="filter-btn px-6 py-2 font-cinzel text-sm border-2 border-gold text-gold rounded-full hover:bg-gold hover:text-midnight">
+                            <i class="fas fa-cross mr-2"></i>Christological
                         </button>
-                        <button onclick="filterTypologies('Exodus and Covenant')" class="filter-btn px-6 py-2 font-cinzel text-sm border-2 border-gold text-gold rounded-full hover:bg-gold hover:text-midnight">
-                            Exodus & Covenant
+                        <button onclick="filterTypologies('Marian')" class="filter-btn px-6 py-2 font-cinzel text-sm border-2 border-gold text-gold rounded-full hover:bg-gold hover:text-midnight">
+                            <i class="fas fa-crown mr-2"></i>Marian
                         </button>
-                        <button onclick="filterTypologies('Kingdom and Prophets')" class="filter-btn px-6 py-2 font-cinzel text-sm border-2 border-gold text-gold rounded-full hover:bg-gold hover:text-midnight">
-                            Kingdom & Prophets
+                        <button onclick="filterTypologies('Prophetic and Ecclesial')" class="filter-btn px-6 py-2 font-cinzel text-sm border-2 border-gold text-gold rounded-full hover:bg-gold hover:text-midnight">
+                            <i class="fas fa-church mr-2"></i>Prophetic & Ecclesial
+                        </button>
+                        <button onclick="filterTypologies('Sacramental')" class="filter-btn px-6 py-2 font-cinzel text-sm border-2 border-gold text-gold rounded-full hover:bg-gold hover:text-midnight">
+                            <i class="fas fa-wine-glass mr-2"></i>Sacramental
                         </button>
                     </div>
                 </div>

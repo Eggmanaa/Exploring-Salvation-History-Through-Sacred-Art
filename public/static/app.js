@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupEventListeners();
     
     // Initialize components
-    initializeTimeline();
     renderTypologies();
     
     // Hide loading screen
@@ -79,61 +78,7 @@ function scrollToSection(sectionId) {
     }
 }
 
-// Initialize timeline
-function initializeTimeline() {
-    const timelineContainer = document.getElementById('timeline-container');
-    if (!timelineContainer) return;
-    
-    const timelineEvents = [
-        {
-            period: 'Creation & Patriarchs',
-            date: 'Genesis 1-22',
-            description: 'The foundation of salvation history begins with creation, the fall, and God\'s covenant with the patriarchs.',
-            icon: 'fa-seedling',
-            side: 'left'
-        },
-        {
-            period: 'Exodus & Covenant',
-            date: 'Exodus - Joshua',
-            description: 'God liberates His people from slavery and establishes His covenant through the Law.',
-            icon: 'fa-tablets',
-            side: 'right'
-        },
-        {
-            period: 'Kingdom & Prophets',
-            date: '1 Samuel - Malachi',
-            description: 'The establishment of the Davidic kingdom and the prophetic preparation for the Messiah.',
-            icon: 'fa-crown',
-            side: 'left'
-        },
-        {
-            period: 'The Incarnation',
-            date: 'The Gospels',
-            description: 'The fulfillment of all typologies in the person and work of Jesus Christ.',
-            icon: 'fa-star',
-            side: 'right'
-        }
-    ];
-    
-    timelineContainer.innerHTML = timelineEvents.map(event => `
-        <div class="flex items-center ${event.side === 'right' ? 'flex-row-reverse' : ''}">
-            <div class="flex-1 ${event.side === 'right' ? 'text-right pr-8' : 'pl-8'}">
-                <div class="bg-burgundy/20 rounded-lg p-6 border-2 border-gold/30 hover:border-gold transition-all">
-                    <div class="flex items-center ${event.side === 'right' ? 'justify-end' : ''}">
-                        <i class="fas ${event.icon} text-gold text-2xl ${event.side === 'right' ? 'ml-3' : 'mr-3'}"></i>
-                        <h3 class="font-cinzel text-xl text-gold">${event.period}</h3>
-                    </div>
-                    <p class="font-crimson text-ivory/80 text-sm mt-2">${event.date}</p>
-                    <p class="font-crimson text-ivory mt-3">${event.description}</p>
-                </div>
-            </div>
-            <div class="relative flex items-center justify-center">
-                <div class="w-4 h-4 bg-gold rounded-full border-4 border-midnight"></div>
-            </div>
-            <div class="flex-1"></div>
-        </div>
-    `).join('');
-}
+
 
 // Render typologies grid
 function renderTypologies(filter = 'all') {
@@ -142,7 +87,15 @@ function renderTypologies(filter = 'all') {
     
     const filteredTypologies = filter === 'all' 
         ? typologiesData 
-        : typologiesData.filter(t => t.section === filter);
+        : typologiesData.filter(t => t.category === filter);
+    
+    // Group by category for better display
+    const categoryIcons = {
+        'Christological': 'fa-cross',
+        'Marian': 'fa-crown',
+        'Prophetic and Ecclesial': 'fa-church',
+        'Sacramental': 'fa-wine-glass'
+    };
     
     grid.innerHTML = filteredTypologies.map(typology => `
         <div class="typology-card bg-burgundy/20 rounded-lg overflow-hidden border-2 border-gold/30 hover:border-gold transition-all transform hover:scale-105 cursor-pointer"
@@ -173,11 +126,14 @@ function renderTypologies(filter = 'all') {
             <div class="p-6">
                 <div class="flex items-center justify-between mb-2">
                     <span class="text-gold font-cinzel text-sm">#${typology.id}</span>
-                    <span class="text-ivory/60 font-crimson text-xs">${typology.section}</span>
+                    <span class="text-ivory/60 font-crimson text-xs">
+                        <i class="fas ${categoryIcons[typology.category] || 'fa-book'} mr-1"></i>
+                        ${typology.category}
+                    </span>
                 </div>
                 <h3 class="font-cinzel text-lg text-gold mb-2">${typology.theme}</h3>
                 <p class="font-crimson text-ivory/80 text-sm line-clamp-2">
-                    ${typology.description ? typology.description.substring(0, 100) + '...' : 'Click to explore this typological connection...'}
+                    ${typology.theological_significance ? typology.theological_significance.substring(0, 100) + '...' : 'Click to explore this typological connection...'}
                 </p>
             </div>
         </div>
@@ -201,7 +157,7 @@ function filterTypologies(filter) {
     renderTypologies(filter);
 }
 
-// Open typology modal
+// Open typology modal with enhanced content
 function openTypologyModal(id) {
     const typology = typologiesData.find(t => t.id === id);
     if (!typology) return;
