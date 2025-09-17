@@ -82,7 +82,7 @@ app.get('/', (c) => {
                 <div class="flex items-center justify-between h-16">
                     <div class="flex items-center">
                         <i class="fas fa-cross text-gold text-2xl mr-3"></i>
-                        <h1 class="font-cinzel text-gold text-xl font-semibold">Salvation History</h1>
+                        <h1 class="font-cinzel text-gold text-xl font-semibold">A Compendium of Typology</h1>
                     </div>
                     <div class="hidden md:flex space-x-8">
                         <a href="#home" class="nav-link font-crimson text-ivory hover:text-gold transition-colors">Introduction</a>
@@ -109,22 +109,30 @@ app.get('/', (c) => {
 
         <!-- Hero Section -->
         <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-            <!-- Background Pattern -->
-            <div class="absolute inset-0 opacity-10">
-                <div class="cathedral-pattern"></div>
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img src="https://page.gensparksite.com/v1/base64_upload/0cf3d4a4e13617c03d32d9fa1c4f73e9" 
+                     alt="The Creation of Adam by Michelangelo"
+                     class="w-full h-full object-cover opacity-40">
+                <div class="absolute inset-0 bg-gradient-to-b from-midnight/60 via-midnight/40 to-midnight/80"></div>
             </div>
             
             <!-- Hero Content -->
             <div class="relative z-10 text-center px-4 max-w-6xl mx-auto">
-                <div class="mb-8">
-                    <i class="fas fa-cross text-gold text-6xl animate-pulse"></i>
-                </div>
-                <h1 class="font-cinzel text-4xl md:text-6xl text-gold mb-6 tracking-wider">
-                    The Unveiled Mystery
+                <h1 class="font-cinzel text-4xl md:text-6xl text-gold mb-6 tracking-wider text-shadow-gold">
+                    The Divine Tapestry
                 </h1>
-                <p class="font-cinzel text-xl md:text-2xl text-ivory mb-4">
-                    A Typological Journey Through Salvation History
+                <p class="font-cinzel text-xl md:text-2xl text-ivory mb-8">
+                    A Compendium of Biblical Typology
                 </p>
+                <div class="max-w-3xl mx-auto mb-8 bg-midnight/60 backdrop-blur-sm rounded-lg p-6 border border-gold/30">
+                    <p class="font-crimson text-lg text-ivory/90 italic leading-relaxed mb-2">
+                        "The New Testament lies hidden in the Old and the Old Testament is unveiled in the New."
+                    </p>
+                    <p class="font-crimson text-ivory/70 text-sm">
+                        — St. Augustine
+                    </p>
+                </div>
                 <p class="font-crimson text-lg text-ivory/90 mb-8 max-w-3xl mx-auto leading-relaxed">
                     Discover how the Old Testament prefigures the New through thirty profound connections,
                     revealed through the masterpieces of sacred art spanning two millennia.
@@ -165,6 +173,14 @@ app.get('/', (c) => {
                             Typology is the study of how persons, events, and institutions in the Old Testament prefigure and point to their fulfillment 
                             in the New Testament. Like shadows cast by a coming reality, these types reveal God's consistent plan throughout history.
                         </p>
+                        <div class="bg-burgundy/30 rounded-lg p-4 border-l-4 border-gold mb-6">
+                            <p class="font-crimson text-ivory/90 text-base italic leading-relaxed mb-2">
+                                "The Church, as early as apostolic times, and then constantly in her Tradition, has illuminated the unity of the divine plan in the two Testaments through typology, which discerns in God's works of the Old Covenant prefigurations of what he accomplished in the fullness of time in the person of his incarnate Son."
+                            </p>
+                            <p class="font-crimson text-ivory/70 text-sm">
+                                — Catechism of the Catholic Church, 128
+                            </p>
+                        </div>
                         <p class="font-crimson text-ivory text-lg leading-relaxed">
                             Through sacred art, we can visualize these connections and understand how God prepared humanity for the coming of Christ 
                             across centuries of revelation.
@@ -172,12 +188,12 @@ app.get('/', (c) => {
                     </div>
                     <div class="relative">
                         <div class="bg-gradient-to-br from-gold/20 to-burgundy/20 rounded-lg p-8 border-2 border-gold/30">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/800px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg" 
-                                 alt="The Creation of Adam" 
+                            <img src="https://page.gensparksite.com/v1/base64_upload/11763b51548ee92becebf007a58ed799" 
+                                 alt="The Transfiguration" 
                                  class="rounded-lg shadow-2xl w-full">
                             <p class="font-crimson text-ivory/80 text-sm mt-4 text-center">
-                                "The Creation of Adam" by Michelangelo (1512)<br>
-                                The first typology: Adam and Christ
+                                "The Transfiguration" by Raphael (1516-1520)<br>
+                                The divine revelation bridging Old and New Testaments
                             </p>
                         </div>
                     </div>

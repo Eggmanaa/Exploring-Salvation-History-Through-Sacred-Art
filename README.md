@@ -1,7 +1,7 @@
-# Exploring Salvation History Through Sacred Art
+# The Divine Tapestry: A Compendium of Biblical Typology
 
 ## Project Overview
-- **Name**: Salvation History Typology Explorer
+- **Name**: The Divine Tapestry - A Compendium of Biblical Typology
 - **Goal**: To present the 30 major typological connections between Old and New Testament through sacred art masterpieces
 - **Features**: 
   - Interactive gallery of 60 classical religious artworks
