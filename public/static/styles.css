@@ -260,6 +260,23 @@
         inset 0 0 60px rgba(255, 215, 0, 0.1);
 }
 
+/* Hero text overlay styles */
+.hero-text-overlay {
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.95),
+        0 0 30px rgba(0, 0, 0, 0.9),
+        0 0 60px rgba(0, 0, 0, 0.8);
+}
+
+.hero-title-gold {
+    color: #FFD700;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 1),
+        0 0 40px rgba(0, 0, 0, 0.9),
+        0 0 80px rgba(255, 215, 0, 0.4),
+        0 0 120px rgba(255, 215, 0, 0.2);
+}
+
 /* Responsive image containers */
 .image-container {
     position: relative;

@@ -108,53 +108,57 @@ app.get('/', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-midnight via-burgundy/20 to-midnight py-12">
-            <div class="absolute inset-0 opacity-5">
-                <div class="cathedral-pattern"></div>
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <!-- Creation of Adam as Full Background -->
+            <div class="absolute inset-0">
+                <img src="https://page.gensparksite.com/v1/base64_upload/0cf3d4a4e13617c03d32d9fa1c4f73e9" 
+                     alt="The Creation of Adam by Michelangelo"
+                     class="w-full h-full object-cover">
+                <!-- Dark gradient overlay for text readability -->
+                <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
             </div>
             
-            <div class="relative z-10 w-full max-w-7xl mx-auto px-4">
-                <!-- Title Above Image -->
-                <div class="text-center mb-6">
-                    <h1 class="font-cinzel text-5xl md:text-7xl text-gold mb-3 tracking-wider text-shadow-gold">
-                        The Divine Tapestry
-                    </h1>
-                    <p class="font-cinzel text-xl md:text-3xl text-ivory">
-                        A Compendium of Biblical Typology
-                    </p>
-                </div>
+            <!-- Hero Content Overlaid on Image -->
+            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+                <!-- Main Title -->
+                <h1 class="font-cinzel text-5xl md:text-7xl lg:text-8xl mb-4 tracking-wider"
+                    style="color: #FFD700; text-shadow: 2px 2px 4px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.8), 0 0 60px rgba(255,215,0,0.3);">
+                    The Divine Tapestry
+                </h1>
                 
-                <!-- Main Creation of Adam Image - Centerpiece -->
-                <div class="mb-8">
-                    <div class="relative mx-auto" style="max-width: 1200px;">
-                        <div class="ornate-border rounded-lg overflow-hidden shadow-2xl hero-image-frame">
-                            <img src="https://page.gensparksite.com/v1/base64_upload/0cf3d4a4e13617c03d32d9fa1c4f73e9" 
-                                 alt="The Creation of Adam by Michelangelo - Sistine Chapel (1512)"
-                                 class="w-full h-auto block"
-                                 style="max-height: 70vh; object-fit: contain; background: #1a1a2e;">
-                        </div>
-                        <!-- Golden corner accents -->
-                        <div class="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-gold rounded-tl-lg -translate-x-2 -translate-y-2"></div>
-                        <div class="absolute top-0 right-0 w-20 h-20 border-t-4 border-r-4 border-gold rounded-tr-lg translate-x-2 -translate-y-2"></div>
-                        <div class="absolute bottom-0 left-0 w-20 h-20 border-b-4 border-l-4 border-gold rounded-bl-lg -translate-x-2 translate-y-2"></div>
-                        <div class="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-gold rounded-br-lg translate-x-2 translate-y-2"></div>
-                    </div>
-                </div>
+                <!-- Subtitle -->
+                <p class="font-cinzel text-2xl md:text-3xl lg:text-4xl mb-10"
+                   style="color: #FFFFF0; text-shadow: 2px 2px 4px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8);">
+                    A Compendium of Biblical Typology
+                </p>
                 
-                <!-- Quote and Description Below Image -->
-                <div class="text-center max-w-4xl mx-auto">
-                    <div class="mb-6 bg-midnight/70 backdrop-blur-sm rounded-lg p-5 border border-gold/40">
-                        <p class="font-crimson text-lg md:text-xl text-ivory italic leading-relaxed mb-2">
+                <!-- St. Augustine Quote -->
+                <div class="mb-10 max-w-3xl mx-auto">
+                    <div class="bg-black/60 backdrop-blur-sm rounded-lg p-6 border border-gold/50">
+                        <p class="font-crimson text-xl md:text-2xl italic leading-relaxed mb-3"
+                           style="color: #FFD700; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">
                             "The New Testament lies hidden in the Old and the Old Testament is unveiled in the New."
                         </p>
-                        <p class="font-crimson text-ivory/80 text-sm">
+                        <p class="font-crimson text-lg"
+                           style="color: #FFFFF0; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">
                             — St. Augustine
                         </p>
                     </div>
-                    <p class="font-crimson text-base md:text-lg text-ivory/90 leading-relaxed">
-                        Discover how the Old Testament prefigures the New through thirty profound connections,
-                        revealed through the masterpieces of sacred art spanning two millennia.
-                    </p>
+                </div>
+                
+                <!-- Painting Attribution -->
+                <p class="font-crimson text-lg md:text-xl mb-6"
+                   style="color: #FFD700; text-shadow: 2px 2px 3px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.7);">
+                    <i class="fas fa-palette mr-2"></i>
+                    The Creation of Adam by Michelangelo - Sistine Chapel (1512)
+                </p>
+                
+                <!-- Description -->
+                <p class="font-crimson text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-8"
+                   style="color: #FFFFF0; text-shadow: 2px 2px 3px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.7);">
+                    Discover how the Old Testament prefigures the New through thirty profound connections,
+                    revealed through the masterpieces of sacred art spanning two millennia.
+                </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <button onclick="scrollToSection('typologies')" class="px-8 py-3 bg-gold text-midnight font-cinzel font-semibold rounded-lg hover:bg-gold/90 transition-all transform hover:scale-105">
                         <i class="fas fa-book-open mr-2"></i>
