@@ -1,13 +1,15 @@
 # The Divine Tapestry: A Compendium of Biblical Typology
 
 ## Project Overview
-- **Name**: The Divine Tapestry - A Compendium of Biblical Typology
-- **Goal**: To present the 30 major typological connections between Old and New Testament through sacred art masterpieces
+- **Name**: Exploring Salvation History Through Sacred Art
+- **Goal**: To present 21 major typological connections between Old and New Testament through sacred art masterpieces
 - **Features**: 
-  - Interactive gallery of 60 classical religious artworks
+  - Interactive gallery of 42 classical religious artworks
   - Cathedral-themed design with Gothic aesthetics
-  - Timeline of salvation history
-  - Detailed theological explanations for each typology
+  - 4 theological categories: Christological, Marian, Prophetic & Ecclesial, Sacramental
+  - Comprehensive theological content for each typology
+  - Key scripture verses and saint quotes
+  - Discussion questions for deeper reflection
   - Responsive design for all devices
   - Lightbox image viewer for full artwork appreciation
 
@@ -18,9 +20,17 @@
 
 ## Data Architecture
 - **Data Models**: 
-  - Typology model with Old/New Testament artwork pairs
-  - 30 typologies organized into 3 sections
-  - Each artwork includes metadata (artist, year, source)
+  - Enhanced Typology model with comprehensive theological data
+  - 21 typologies organized into 4 theological categories
+  - Each typology includes:
+    - Old/New Testament artwork pairs with metadata
+    - Type and antitype descriptions
+    - Key parallels array
+    - Scripture references (OT and NT)
+    - Key scripture verses with citations
+    - Saint quotes with attributions
+    - Theological significance text
+    - Discussion questions for reflection
 - **Storage Services**: 
   - Static data stored in TypeScript modules
   - Images served from Wikimedia Commons (public domain)
@@ -32,11 +42,17 @@
 
 ## Currently Completed Features
 ✅ Cathedral-themed design with burgundy, purple, and gold color scheme  
-✅ Hero section with animated elements  
-✅ Interactive timeline showing salvation history progression  
-✅ Complete data structure for all 30 typologies  
-✅ Grid gallery view with filter by section  
-✅ Detailed modal view for each typology  
+✅ Hero section with Michelangelo's Creation of Adam  
+✅ Restructured into 4 theological categories instead of timeline  
+✅ Complete data structure for 21 comprehensive typologies  
+✅ Grid gallery view with filter by category  
+✅ Enhanced modal view with comprehensive theological information:
+   - Type and Antitype descriptions
+   - Key parallels between Old and New Testament
+   - Key Scripture verses with references
+   - Saint quotes and theological wisdom
+   - Theological significance explanations
+   - Discussion questions for reflection
 ✅ Image lightbox for fullscreen artwork viewing  
 ✅ Responsive mobile design  
 ✅ API endpoints for typology data  
@@ -54,11 +70,14 @@
 - `GET /api/typology/:id` - Returns specific typology by ID (1-30)
 
 ### Navigation Sections
-- `#home` - Hero section with introduction
+- `#home` - Hero section with Creation of Adam artwork
 - `#intro` - Understanding typology explanation
-- `#timeline` - Interactive salvation history timeline
-- `#typologies` - Gallery of all 30 typologies
-- `#about` - About the project
+- `#typologies` - Gallery of all 21 typologies
+- Categories:
+  - Christological (8 typologies)
+  - Marian (3 typologies)
+  - Prophetic and Ecclesial (3 typologies)
+  - Sacramental (7 typologies)
 
 ### Interactive Features
 - Filter buttons for typology sections (All, Creation & Patriarchs, Exodus & Covenant, Kingdom & Prophets)
