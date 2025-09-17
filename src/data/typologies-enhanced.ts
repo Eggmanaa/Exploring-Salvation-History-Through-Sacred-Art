@@ -13,6 +13,11 @@ export interface DiscussionQuestion {
   question: string;
 }
 
+export interface SaintQuote {
+  text: string;
+  saint: string;
+}
+
 export interface Typology {
   id: number;
   theme: string;
@@ -24,6 +29,8 @@ export interface Typology {
   key_parallels: string[];
   scripture_ot: string;
   scripture_nt: string;
+  key_scripture_verses: string[];
+  saint_quotes: SaintQuote[];
   theological_significance: string;
   discussion_questions: DiscussionQuestion[];
 }
@@ -62,6 +69,17 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Genesis 2:15-17; 3:1-24",
     scripture_nt: "Romans 5:12-21; 1 Corinthians 15:21-22, 45-49; Philippians 2:8",
+    key_scripture_verses: [
+      "Therefore, just as sin entered the world through one man, and death through sin, and in this way death came to all people, because all sinned (Romans 5:12)",
+      "For as in Adam all die, so in Christ all will be made alive (1 Corinthians 15:22)",
+      "The first man Adam became a living being; the last Adam, a life-giving spirit (1 Corinthians 15:45)",
+      "And being found in appearance as a man, he humbled himself by becoming obedient to death—even death on a cross! (Philippians 2:8)"
+    ],
+    saint_quotes: [
+      { text: "Christ recapitulated in Himself the long history of man, summing up and giving us salvation in order that we might receive again in Christ Jesus what we had lost in Adam.", saint: "St. Irenaeus" },
+      { text: "O happy fault that earned for us so great, so glorious a Redeemer!", saint: "St. Augustine (Exsultet)" },
+      { text: "Adam was a type of the one who was to come, but the gift is not like the trespass.", saint: "St. John Chrysostom" }
+    ],
     theological_significance: "The Adam-Christ typology reveals God's plan to restore humanity through a new representative head. Where the first Adam failed as humanity's federal head, bringing condemnation to all, the Last Adam succeeds perfectly, bringing justification to all who believe. This typology emphasizes both the universality of sin and the superabundance of grace.",
     discussion_questions: [
       { id: 1, question: "How does understanding Jesus as the New Adam deepen your appreciation of the Incarnation?" },
@@ -104,6 +122,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Genesis 22:1-19",
     scripture_nt: "John 3:16; 19:17; Hebrews 11:17-19",
+    key_scripture_verses: [
+      "Take your son, your only son, whom you love—Isaac—and go to the region of Moriah (Genesis 22:2)",
+      "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life (John 3:16)",
+      "Abraham answered, 'God himself will provide the lamb for the burnt offering, my son' (Genesis 22:8)",
+      "Carrying his own cross, he went out to the place of the Skull (John 19:17)"
+    ],
+    saint_quotes: [
+      { text: "Isaac carrying the wood prefigured Christ carrying His cross. As Isaac willingly followed his father, Christ willingly followed the Father's will.", saint: "St. Augustine" },
+      { text: "The ram caught in the thicket by its horns prefigures Christ crowned with thorns.", saint: "St. Melito of Sardis" }
+    ],
     theological_significance: "The Isaac typology profoundly illustrates the Father's sacrificial love and the Son's willing obedience. Abraham's willingness to sacrifice his only son becomes a window into the Father's heart, while Isaac's submission prefigures Christ's voluntary self-offering. This type emphasizes that salvation requires a costly sacrifice - one that only God Himself could provide.",
     discussion_questions: [
       { id: 1, question: "How does Abraham's willingness to sacrifice Isaac help us understand God the Father's love?" },
@@ -147,6 +175,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Exodus 2-20; Deuteronomy 18:15-18",
     scripture_nt: "Matthew 2:13-21; 4:1-2; 5-7; Acts 3:22-23; Hebrews 3:1-6",
+    key_scripture_verses: [
+      "The LORD your God will raise up for you a prophet like me from among you, from your fellow Israelites (Deuteronomy 18:15)",
+      "Out of Egypt I called my son (Matthew 2:15)",
+      "Jesus was led by the Spirit into the wilderness to be tempted by the devil. After fasting forty days and forty nights, he was hungry (Matthew 4:1-2)",
+      "But Christ is faithful as the Son over God's house (Hebrews 3:6)"
+    ],
+    saint_quotes: [
+      { text: "Moses was a servant in God's house, but Christ was a Son. Moses brought the Law written on stone, but Christ brings grace and truth.", saint: "St. John Chrysostom" },
+      { text: "The law was given through Moses; grace and truth came through Jesus Christ.", saint: "St. Augustine" }
+    ],
     theological_significance: "The Moses-Christ typology reveals Jesus as the prophet greater than Moses promised in Deuteronomy. Where Moses mediated a covenant written on stone, Christ mediates a covenant written on hearts. This typology emphasizes continuity and fulfillment - the New Law doesn't abolish but perfects the Old, revealing God's consistent yet progressive revelation.",
     discussion_questions: [
       { id: 1, question: "How does Jesus fulfill and surpass Moses' role as lawgiver and liberator?" },
@@ -190,6 +228,15 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Genesis 37-50",
     scripture_nt: "Matthew 26:14-16; 27:3-10; John 6:35",
+    key_scripture_verses: [
+      "You intended to harm me, but God intended it for good to accomplish what is now being done, the saving of many lives (Genesis 50:20)",
+      "Then one of the Twelve—the one called Judas Iscariot—went to the chief priests and asked, 'What are you willing to give me if I deliver him over to you?' So they counted out for him thirty pieces of silver (Matthew 26:14-15)",
+      "Jesus declared, 'I am the bread of life. Whoever comes to me will never go hungry' (John 6:35)"
+    ],
+    saint_quotes: [
+      { text: "Joseph, betrayed by his brothers for silver, prefigures Christ betrayed by Judas for silver coins.", saint: "St. Ambrose" },
+      { text: "As Joseph fed his brothers with grain in Egypt, so Christ feeds us with Himself in the Eucharist.", saint: "St. Ephrem the Syrian" }
+    ],
     theological_significance: "Joseph's story provides one of the most complete Old Testament portraits of Christ's paschal mystery. His journey from favored son through betrayal and apparent death to exaltation and salvation of his people mirrors Christ's path. The typology emphasizes that God can bring good from evil, using even betrayal and suffering as instruments of salvation.",
     discussion_questions: [
       { id: 1, question: "How does Joseph's forgiveness of his brothers prefigure Christ's forgiveness from the cross?" },
@@ -233,6 +280,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "1 Samuel 16; 2 Samuel 5:1-5; 7:11-16; Psalm 89:3-4",
     scripture_nt: "Matthew 1:1; 2:1-6; Luke 1:32-33; Revelation 19:16",
+    key_scripture_verses: [
+      "Your house and your kingdom will endure forever before me; your throne will be established forever (2 Samuel 7:16)",
+      "This is the genealogy of Jesus the Messiah the son of David, the son of Abraham (Matthew 1:1)",
+      "He will be great and will be called the Son of the Most High. The Lord God will give him the throne of his father David (Luke 1:32)",
+      "On his robe and on his thigh he has this name written: KING OF KINGS AND LORD OF LORDS (Revelation 19:16)"
+    ],
+    saint_quotes: [
+      { text: "David was a king according to the flesh; Christ is King according to the Spirit. David ruled one nation; Christ rules all nations.", saint: "St. Augustine" },
+      { text: "The kingdom of David was temporal and passed away; the kingdom of Christ is eternal and shall never pass away.", saint: "St. Jerome" }
+    ],
     theological_significance: "The Davidic typology establishes Jesus's messianic credentials and royal identity. God's covenant with David finds its ultimate fulfillment in Christ, whose kingdom transcends all earthly limitations. This typology reveals that God's promises are trustworthy and that His plan encompasses both temporal and eternal dimensions.",
     discussion_questions: [
       { id: 1, question: "Why is it significant that Jesus is called 'Son of David' throughout the Gospels?" },
@@ -275,6 +332,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "1 Kings 3:5-14; 6:1-38; 10:1-13",
     scripture_nt: "Matthew 12:42; John 2:19-21; 1 Corinthians 1:24, 30",
+    key_scripture_verses: [
+      "God gave Solomon wisdom and very great insight, and a breadth of understanding as measureless as the sand on the seashore (1 Kings 4:29)",
+      "The Queen of the South will rise at the judgment with this generation and condemn it; for she came from the ends of the earth to listen to Solomon's wisdom, and now something greater than Solomon is here (Matthew 12:42)",
+      "Destroy this temple, and I will raise it again in three days (John 2:19)",
+      "Christ the power of God and the wisdom of God (1 Corinthians 1:24)"
+    ],
+    saint_quotes: [
+      { text: "Solomon built a temple made with hands; Christ built a temple not made with hands—His own body.", saint: "St. Cyril of Jerusalem" },
+      { text: "Solomon was wise, but behold, Wisdom itself is here.", saint: "St. Ambrose" }
+    ],
     theological_significance: "Solomon's typology reveals Christ as the fulfillment of wisdom literature and Temple theology. Where Solomon's wisdom was a gift, Christ's wisdom is His very nature. The Temple Solomon built with hands gives way to the temple of Christ's body, making God's presence universally accessible through the Incarnation.",
     discussion_questions: [
       { id: 1, question: "How does Jesus embody and surpass the wisdom of Solomon?" },
@@ -317,6 +384,15 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Jonah 1-3",
     scripture_nt: "Matthew 12:39-41; 16:4; Luke 11:29-32",
+    key_scripture_verses: [
+      "Now the LORD provided a huge fish to swallow Jonah, and Jonah was in the belly of the fish three days and three nights (Jonah 1:17)",
+      "For as Jonah was three days and three nights in the belly of a huge fish, so the Son of Man will be three days and three nights in the heart of the earth (Matthew 12:40)",
+      "The men of Nineveh will stand up at the judgment with this generation and condemn it; for they repented at the preaching of Jonah, and now something greater than Jonah is here (Matthew 12:41)"
+    ],
+    saint_quotes: [
+      { text: "As Jonah was a sign to the Ninevites, so Christ is a sign to us—dying and rising for our salvation.", saint: "St. Jerome" },
+      { text: "Jonah's three days in the whale prefigured Christ's three days in the tomb.", saint: "St. Augustine" }
+    ],
     theological_significance: "The Jonah typology is unique as Christ Himself explicitly identifies it, calling it 'the sign of Jonah.' This type emphasizes the death and resurrection as the ultimate sign validating Christ's mission. It also prefigures the universal scope of salvation, as Jonah's mission to Gentile Nineveh foreshadows the Gospel going to all nations.",
     discussion_questions: [
       { id: 1, question: "Why did Jesus choose the sign of Jonah as THE sign for His generation?" },
@@ -359,6 +435,14 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "2 Kings 2-13, especially 4:42-44; 5:1-14",
     scripture_nt: "Matthew 14:13-21; Luke 7:11-17; John 3:34",
+    key_scripture_verses: [
+      "'Give it to the people to eat.' But his servant asked, 'How can I set this before a hundred men?' 'Give it to the people to eat,' Elisha insisted. 'This is what the LORD says: They will eat and have some left over' (2 Kings 4:42-43)",
+      "Taking the five loaves and the two fish and looking up to heaven, he gave thanks and broke them. Then he gave them to the disciples to distribute to the people (Luke 9:16)",
+      "For the one whom God has sent speaks the words of God, for God gives the Spirit without limit (John 3:34)"
+    ],
+    saint_quotes: [
+      { text: "Elisha multiplied the loaves as a servant; Christ multiplied them as the Lord.", saint: "St. Ephrem the Syrian" }
+    ],
     theological_significance: "Elisha's ministry prefigures Christ's miraculous works, but the typology emphasizes how Christ infinitely surpasses the prophets. Where Elisha needed Elijah's mantle for power, Christ works by His own authority. This demonstrates that Jesus is not merely another prophet but the source of all prophetic power.",
     discussion_questions: [
       { id: 1, question: "How do Elisha's miracles prepare us to understand Christ's miraculous ministry?" },
@@ -404,6 +488,17 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Genesis 2:18-25; 3:1-20",
     scripture_nt: "Luke 1:26-38; John 19:25-27; Revelation 12:1-17",
+    key_scripture_verses: [
+      "I will put enmity between you and the woman, and between your offspring and hers; he will crush your head, and you will strike his heel (Genesis 3:15)",
+      "The angel said to her, 'Do not be afraid, Mary; you have found favor with God' (Luke 1:30)",
+      "Mary answered, 'I am the Lord's servant. May your word to me be fulfilled' (Luke 1:38)",
+      "A great sign appeared in heaven: a woman clothed with the sun, with the moon under her feet (Revelation 12:1)"
+    ],
+    saint_quotes: [
+      { text: "The knot of Eve's disobedience was loosed by the obedience of Mary. For what the virgin Eve had bound fast through unbelief, this did the virgin Mary set free through faith.", saint: "St. Irenaeus" },
+      { text: "Death through Eve, life through Mary.", saint: "St. Jerome" },
+      { text: "For as Eve was seduced by the word of the devil to flee from God, so Mary was evangelized by the word of an angel to carry God.", saint: "St. Justin Martyr" }
+    ],
     theological_significance: "The Eve-Mary typology, recognized from the earliest Church Fathers, reveals Mary's unique role in salvation history. As St. Irenaeus taught, 'the knot of Eve's disobedience was untied by Mary's obedience.' This typology illuminates the Immaculate Conception and Mary's perpetual virginity as fitting preparations for her role as Mother of God.",
     discussion_questions: [
       { id: 1, question: "How does Mary's 'yes' to God reverse Eve's 'yes' to the serpent?" },
@@ -447,6 +542,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Exodus 25:10-22; 2 Samuel 6:1-16",
     scripture_nt: "Luke 1:35-45; Revelation 11:19-12:1",
+    key_scripture_verses: [
+      "The cloud covered the tent of meeting, and the glory of the LORD filled the tabernacle (Exodus 40:34)",
+      "The Holy Spirit will come on you, and the power of the Most High will overshadow you (Luke 1:35)",
+      "When Elizabeth heard Mary's greeting, the baby leaped in her womb (Luke 1:41)",
+      "Then God's temple in heaven was opened, and within his temple was seen the ark of his covenant (Revelation 11:19)"
+    ],
+    saint_quotes: [
+      { text: "The ark contained the manna, the urn of gold, and the tables of the covenant; and Mary bore the Bread of Life, the Eternal High Priest, and the Word Incarnate.", saint: "St. Athanasius" },
+      { text: "If anyone does not believe that Holy Mary is the Mother of God, he is severed from the Godhead.", saint: "St. Gregory of Nazianzus" }
+    ],
     theological_significance: "The Ark typology reveals Mary as the dwelling place of God's presence in the New Covenant. As the Ark was overshadowed by God's glory, so Mary was overshadowed by the Holy Spirit. This typology supports Catholic doctrines of Mary's perpetual virginity (the Ark could not be touched) and her Assumption (the Ark was taken up to God's temple).",
     discussion_questions: [
       { id: 1, question: "How do the contents of the Ark prefigure what Mary carried in her womb?" },
@@ -489,6 +594,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "1 Kings 2:19-20; Psalm 45:9; Jeremiah 13:18",
     scripture_nt: "Revelation 12:1; Luke 1:43; John 2:3-5; 19:26-27",
+    key_scripture_verses: [
+      "When Bathsheba went to King Solomon, the king stood up to meet her, bowed down to her and sat down on his throne. He had a throne brought for the king's mother, and she sat down at his right hand (1 Kings 2:19)",
+      "At your right hand is the royal bride in gold of Ophir (Psalm 45:9)",
+      "But why am I so favored, that the mother of my Lord should come to me? (Luke 1:43)",
+      "When Jesus saw his mother there, and the disciple whom he loved standing nearby, he said to her, 'Woman, here is your son' (John 19:26)"
+    ],
+    saint_quotes: [
+      { text: "The Virgin Mary is both Mother of God and Mother of the Church.", saint: "St. Augustine" },
+      { text: "Through Mary, the curse of Eve is changed into blessing.", saint: "St. Ambrose" }
+    ],
     theological_significance: "The Gebirah typology provides biblical foundation for Mary's queenship and intercessory role. In the Davidic kingdom structure that Christ fulfills, the mother of the king held a unique position of honor and influence. This explains Mary's powerful intercession at Cana and her ongoing maternal mediation for the Church.",
     discussion_questions: [
       { id: 1, question: "How does the Old Testament Queen Mother tradition illuminate Mary's role?" },
@@ -534,6 +649,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "1 Kings 17-19; 2 Kings 1-2; Malachi 4:5-6",
     scripture_nt: "Matthew 3:1-17; 11:7-14; 17:10-13; John 1:19-34; 3:30",
+    key_scripture_verses: [
+      "See, I will send the prophet Elijah to you before that great and dreadful day of the LORD comes (Malachi 4:5)",
+      "And if you are willing to accept it, he is the Elijah who was to come (Matthew 11:14)",
+      "He must become greater; I must become less (John 3:30)",
+      "I baptize you with water for repentance. But after me comes one who is more powerful than I (Matthew 3:11)"
+    ],
+    saint_quotes: [
+      { text: "John was the lamp that burned and gave light, but Christ was the Light itself.", saint: "St. Augustine" },
+      { text: "The voice crying in the wilderness prepared the way for the Word.", saint: "St. Gregory the Great" }
+    ],
     theological_significance: "The Elijah-John typology marks the transition between the Old and New Covenants. John stands as the bridge figure - the last of the Old Testament prophets and the herald of the New. His fulfillment of Elijah's return demonstrates how prophecy works not through reincarnation but through spiritual succession and divine mission.",
     discussion_questions: [
       { id: 1, question: "Why was it important for Elijah to return before the Messiah?" },
@@ -577,6 +702,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Genesis 37-50",
     scripture_nt: "Matthew 1:18-25; 2:13-23",
+    key_scripture_verses: [
+      "When Joseph woke up, he did what the angel of the Lord had commanded him (Matthew 1:24)",
+      "Get up, take the child and his mother and escape to Egypt (Matthew 2:13)",
+      "Joseph had a dream, and when he told it to his brothers, they hated him all the more (Genesis 37:5)",
+      "Because Joseph her husband was faithful to the law, and yet did not want to expose her to public disgrace, he had in mind to divorce her quietly (Matthew 1:19)"
+    ],
+    saint_quotes: [
+      { text: "Joseph was chosen by the eternal Father as the trustworthy guardian and protector of his most precious treasures, namely, his divine Son and Mary.", saint: "St. Bernardine of Siena" },
+      { text: "St. Joseph was the shadow of God the Father upon earth.", saint: "St. John Paul II" }
+    ],
     theological_significance: "The two Josephs typology reveals God's consistent pattern of raising up righteous protectors for His salvific plan. Both men exemplify faith, obedience, and chastity. St. Joseph's role as guardian of the Holy Family mirrors the patriarch Joseph's preservation of Israel, showing continuity in God's providential care.",
     discussion_questions: [
       { id: 1, question: "How do both Josephs demonstrate the importance of dreams in divine revelation?" },
@@ -619,6 +754,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Genesis 49; Exodus 28:21; Numbers 1-2",
     scripture_nt: "Matthew 10:1-4; 19:28; Ephesians 2:20; Revelation 21:12-14",
+    key_scripture_verses: [
+      "Jesus called his twelve disciples to him and gave them authority (Matthew 10:1)",
+      "You who have followed me will also sit on twelve thrones, judging the twelve tribes of Israel (Matthew 19:28)",
+      "Built on the foundation of the apostles and prophets, with Christ Jesus himself as the chief cornerstone (Ephesians 2:20)",
+      "The wall of the city had twelve foundations, and on them were the names of the twelve apostles of the Lamb (Revelation 21:14)"
+    ],
+    saint_quotes: [
+      { text: "The Church is apostolic because she is founded on the apostles.", saint: "St. Clement of Rome" },
+      { text: "As the twelve patriarchs were the fathers of the earthly Israel, so the twelve apostles are fathers of the spiritual Israel.", saint: "St. Leo the Great" }
+    ],
     theological_significance: "This typology reveals the Church as the fulfillment and continuation of Israel. The number twelve signifies completeness and divine government. Christ's deliberate choice of twelve apostles shows His intention to reconstitute God's people, not abolish but fulfill Israel's calling to be a light to the nations.",
     discussion_questions: [
       { id: 1, question: "Why is the number twelve significant in both Testaments?" },
@@ -664,6 +809,17 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Exodus 12:1-28; Deuteronomy 16:1-8",
     scripture_nt: "Matthew 26:17-30; John 6:51-58; 1 Corinthians 5:7; 11:23-26",
+    key_scripture_verses: [
+      "The blood will be a sign for you on the houses where you are, and when I see the blood, I will pass over you (Exodus 12:13)",
+      "Christ, our Passover lamb, has been sacrificed (1 Corinthians 5:7)",
+      "This is my body, which is for you; do this in remembrance of me (1 Corinthians 11:24)",
+      "Whoever eats my flesh and drinks my blood has eternal life (John 6:54)"
+    ],
+    saint_quotes: [
+      { text: "The Lamb of God was prefigured in the Passover lamb, and truly Christ our Passover has been sacrificed.", saint: "St. John Chrysostom" },
+      { text: "The blood on the doorposts prefigured the blood of Christ, which sanctifies those who are saved.", saint: "St. Cyril of Alexandria" },
+      { text: "O sacred banquet in which Christ is received, the memory of His Passion is renewed, the mind is filled with grace, and a pledge of future glory is given to us.", saint: "St. Thomas Aquinas" }
+    ],
     theological_significance: "The Passover-Eucharist typology stands at the heart of sacramental theology. Christ transforms the Passover memorial into the new and eternal covenant. The Eucharist doesn't merely remember but makes present Christ's sacrifice. As the Passover lamb's consumption was necessary for salvation from the angel of death, so the Eucharist is necessary for spiritual life.",
     discussion_questions: [
       { id: 1, question: "How does understanding the Passover deepen your appreciation of the Mass?" },
@@ -707,6 +863,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Exodus 16:1-36; Numbers 11:7-9; Psalm 78:24",
     scripture_nt: "John 6:31-58; Revelation 2:17",
+    key_scripture_verses: [
+      "He humbled you, causing you to hunger and then feeding you with manna, which neither you nor your ancestors had known (Deuteronomy 8:3)",
+      "I am the bread of life. Your ancestors ate the manna in the wilderness, yet they died (John 6:48-49)",
+      "I am the living bread that came down from heaven. Whoever eats this bread will live forever (John 6:51)",
+      "To the one who is victorious, I will give some of the hidden manna (Revelation 2:17)"
+    ],
+    saint_quotes: [
+      { text: "The manna was the figure; the Eucharist is the reality. O how much more excellent is the Bread of Angels than the manna!", saint: "St. Ambrose" },
+      { text: "The Jews ate manna and died; we eat the Living Bread and live forever.", saint: "St. Augustine" }
+    ],
     theological_significance: "In John 6, Jesus makes the manna-Eucharist connection explicit, teaching that He surpasses the manna. While manna sustained temporal life, the Eucharist grants eternal life. This typology emphasizes the Eucharist as necessary spiritual food for the journey to the true Promised Land of heaven.",
     discussion_questions: [
       { id: 1, question: "How does the daily provision of manna relate to daily Mass?" },
@@ -749,6 +915,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Exodus 25:23-30; Leviticus 24:5-9; 1 Samuel 21:1-6",
     scripture_nt: "Matthew 12:3-4; John 6:35; Hebrews 9:2",
+    key_scripture_verses: [
+      "Put the bread of the Presence on this table to be before me at all times (Exodus 25:30)",
+      "Haven't you read what David did when he and his companions were hungry? He entered the house of God, and he and his companions ate the consecrated bread (Matthew 12:3-4)",
+      "Jesus declared, 'I am the bread of life' (John 6:35)",
+      "In the first room were the lampstand and the table with its consecrated bread; this was called the Holy Place (Hebrews 9:2)"
+    ],
+    saint_quotes: [
+      { text: "The bread of the Presence prefigured the Eucharist, the true Bread of the Presence of God.", saint: "St. Thomas Aquinas" },
+      { text: "As the bread of the Presence was always before God's face, so Christ in the Eucharist is always present before the Father.", saint: "St. Robert Bellarmine" }
+    ],
     theological_significance: "The Bread of the Presence typology emphasizes the Eucharist as God's perpetual presence among His people. When David and his men ate this bread in necessity, and Jesus defended this action, it prefigures the accessibility of the Eucharist to all the faithful, not just the priestly class.",
     discussion_questions: [
       { id: 1, question: "How does the perpetual presence of the Temple bread relate to Eucharistic adoration?" },
@@ -791,6 +967,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Genesis 14:18-20; Psalm 110:4",
     scripture_nt: "Hebrews 5:6-10; 6:20-7:28; Matthew 26:26-28",
+    key_scripture_verses: [
+      "Then Melchizedek king of Salem brought out bread and wine. He was priest of God Most High (Genesis 14:18)",
+      "The LORD has sworn and will not change his mind: 'You are a priest forever, in the order of Melchizedek' (Psalm 110:4)",
+      "You are a priest forever, in the order of Melchizedek (Hebrews 5:6)",
+      "While they were eating, Jesus took bread, and when he had given thanks, he broke it (Matthew 26:26)"
+    ],
+    saint_quotes: [
+      { text: "Melchizedek offered bread and wine, and he was a priest. Who else offered bread and wine? Christ offered His Body and Blood.", saint: "St. Ambrose" },
+      { text: "The mysterious Melchizedek appears with bread and wine, prefiguring the Eucharistic sacrifice.", saint: "St. Cyprian" }
+    ],
     theological_significance: "The Melchizedek typology establishes the Eucharist's sacrificial nature and the priesthood of Christ. The use of bread and wine, predating the Mosaic law, shows these elements were always part of God's plan for the perfect sacrifice. This type is crucial for understanding the Mass as a true sacrifice, not merely a meal.",
     discussion_questions: [
       { id: 1, question: "Why is Christ's priesthood 'according to the order of Melchizedek' rather than Aaron?" },
@@ -833,6 +1019,17 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Genesis 6-9",
     scripture_nt: "1 Peter 3:20-21; Matthew 3:13-17; Romans 6:3-4",
+    key_scripture_verses: [
+      "In it only a few people, eight in all, were saved through water (1 Peter 3:20)",
+      "And this water symbolizes baptism that now saves you also (1 Peter 3:21)",
+      "We were therefore buried with him through baptism into death (Romans 6:4)",
+      "As soon as Jesus was baptized, he went up out of the water. At that moment heaven was opened (Matthew 3:16)"
+    ],
+    saint_quotes: [
+      { text: "The flood was a figure of baptism. As the water destroyed the sinful world, so baptism destroys sin.", saint: "St. John Chrysostom" },
+      { text: "Noah's ark prefigures the Church; outside of it, no salvation.", saint: "St. Cyprian" },
+      { text: "The dove brought an olive branch to Noah; the Holy Spirit descended as a dove upon Christ.", saint: "St. Augustine" }
+    ],
     theological_significance: "St. Peter makes this typology explicit, declaring that the flood prefigures baptism. This connection emphasizes baptism's dual action: destroying sin and granting new life. The ark as a type of the Church teaches that salvation comes through incorporation into Christ's body, not through individual effort alone.",
     discussion_questions: [
       { id: 1, question: "How does Peter's explicit connection between the flood and baptism validate typological reading?" },
@@ -876,6 +1073,16 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Exodus 14:15-31; 15:1-21",
     scripture_nt: "1 Corinthians 10:1-2; Romans 6:3-4; Colossians 2:12-15",
+    key_scripture_verses: [
+      "The Israelites went through the sea on dry ground, with a wall of water on their right and on their left (Exodus 14:22)",
+      "They were all baptized into Moses in the cloud and in the sea (1 Corinthians 10:2)",
+      "Having been buried with him in baptism, in which you were also raised with him (Colossians 2:12)",
+      "When the Israelites saw the mighty hand of the LORD displayed against the Egyptians, the people feared the LORD and put their trust in him (Exodus 14:31)"
+    ],
+    saint_quotes: [
+      { text: "The Red Sea is a type of baptism; Moses is a type of Christ; the people are a type of Christians; Pharaoh is a type of the devil.", saint: "St. Augustine" },
+      { text: "Through the Red Sea, God led His people from slavery to freedom; through baptism, He leads us from sin to grace.", saint: "St. Gregory of Nyssa" }
+    ],
     theological_significance: "St. Paul explicitly identifies the Red Sea crossing as a baptism 'into Moses,' prefiguring baptism into Christ. This typology emphasizes baptism as liberation and victory. The destruction of Pharaoh's army in the waters prefigures the destruction of sin and Satan's power in baptismal waters.",
     discussion_questions: [
       { id: 1, question: "How does Paul's interpretation of the Red Sea as baptism guide our understanding?" },
@@ -918,6 +1125,17 @@ export const typologies: Typology[] = [
     ],
     scripture_ot: "Genesis 11:1-9",
     scripture_nt: "Acts 2:1-13; 1 Corinthians 12:12-13",
+    key_scripture_verses: [
+      "Come, let us go down and confuse their language so they will not understand each other (Genesis 11:7)",
+      "All of them were filled with the Holy Spirit and began to speak in other tongues as the Spirit enabled them (Acts 2:4)",
+      "Utterly amazed, they asked: 'Aren't all these who are speaking Galileans? Then how is it that each of us hears them in our native language?' (Acts 2:7-8)",
+      "For we were all baptized by one Spirit so as to form one body (1 Corinthians 12:13)"
+    ],
+    saint_quotes: [
+      { text: "At Babel, tongues were confused as punishment; at Pentecost, tongues were united in praise.", saint: "St. Gregory the Great" },
+      { text: "The Holy Spirit gathered into unity those whom the spirit of pride had dispersed.", saint: "St. Fulgentius" },
+      { text: "What discord divided, love has united.", saint: "St. Augustine" }
+    ],
     theological_significance: "Pentecost reverses Babel's curse, showing the Holy Spirit's power to unite what sin divided. This typology illuminates Confirmation as the sacrament that empowers Christians to build up the Church rather than scatter it, to proclaim God's greatness rather than their own.",
     discussion_questions: [
       { id: 1, question: "How does Pentecost reverse the curse of Babel?" },
