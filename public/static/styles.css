@@ -349,6 +349,33 @@
     }
 }
 
+/* Performance optimizations */
+.typology-card {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.typology-card img {
+  will-change: auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Reduce animation complexity for better performance */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Optimize font loading */
+.font-cinzel, .font-crimson {
+  font-display: swap;
+}
+
 /* Mobile optimization */
 @media (max-width: 768px) {
     .illuminated::first-letter {

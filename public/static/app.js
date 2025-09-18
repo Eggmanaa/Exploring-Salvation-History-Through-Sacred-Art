@@ -4,6 +4,14 @@ let currentFilter = 'all';
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', async () => {
+    // Hide loading screen quickly
+    const hideLoader = () => {
+        const loader = document.getElementById('loading-screen');
+        const nav = document.getElementById('main-nav');
+        if (loader) loader.classList.add('hidden');
+        if (nav) nav.classList.remove('hidden');
+    };
+    
     // Load typologies data
     await loadTypologies();
     
@@ -13,21 +21,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Initialize components
     renderTypologies();
     
-    // Hide loading screen
-    setTimeout(() => {
-        document.getElementById('loading-screen').classList.add('hidden');
-        document.getElementById('main-nav').classList.remove('hidden');
-    }, 1500);
+    // Hide loading screen faster
+    setTimeout(hideLoader, 500);
 });
 
-// Load typologies data from API
+// Load typologies data from API with caching
+let dataPromise = null;
 async function loadTypologies() {
-    try {
-        const response = await axios.get('/api/typologies');
-        typologiesData = response.data.typologies;
-    } catch (error) {
-        console.error('Error loading typologies:', error);
-    }
+    if (dataPromise) return dataPromise;
+    
+    dataPromise = axios.get('/api/typologies')
+        .then(response => {
+            typologiesData = response.data.typologies;
+            return typologiesData;
+        })
+        .catch(error => {
+            console.error('Error loading typologies:', error);
+            dataPromise = null;
+        });
+    
+    return dataPromise;
 }
 
 // Setup event listeners
@@ -107,7 +120,8 @@ function renderTypologies(filter = 'all') {
                         <img src="${typology.old_testament.image_url}" 
                              alt="${typology.old_testament.title}"
                              class="w-full h-full object-cover"
-                             loading="lazy">
+                             loading="lazy"
+                             decoding="async">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-2 left-2 text-xs text-ivory/80 font-crimson">Old Testament</span>
                     </div>
@@ -115,7 +129,8 @@ function renderTypologies(filter = 'all') {
                         <img src="${typology.new_testament.image_url}" 
                              alt="${typology.new_testament.title}"
                              class="w-full h-full object-cover"
-                             loading="lazy">
+                             loading="lazy"
+                             decoding="async">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-2 right-2 text-xs text-ivory/80 font-crimson">New Testament</span>
                     </div>
