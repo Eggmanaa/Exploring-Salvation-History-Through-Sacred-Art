@@ -159,6 +159,7 @@
 - **Output Directory**: `dist`
 - **Environment**: Edge runtime (Cloudflare Workers)
 - **Last Updated**: January 2025
+- **Performance**: Optimized with lazy loading and image optimizations for faster page load
 
 ## Development Setup
 
