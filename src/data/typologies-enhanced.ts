@@ -460,19 +460,19 @@ export const typologies: Typology[] = [
     category: "Marian",
     old_testament: {
       id: "9a",
-      artist: "Peter Paul Rubens (after Titian)",
-      title: "Adam and Eve",
-      year: "1628-1629",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/3/33/Peter_Paul_Rubens_-_Adam_and_Eve%2C_after_Titian%2C_between_1628_and_1629.jpg",
+      artist: "Jan Brueghel the Elder and Peter Paul Rubens",
+      title: "The Earthly Paradise with the Fall of Adam and Eve",
+      year: "1615",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Jan_Brueghel_de_Oude_en_Peter_Paul_Rubens_-_Het_aards_paradijs_met_de_zondeval_van_Adam_en_Eva.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },
     new_testament: {
       id: "9b",
-      artist: "Bartolomé Esteban Murillo",
+      artist: "Leonardo da Vinci",
       title: "The Annunciation",
-      year: "1660-1665",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/b/b1/La_Anunciaci%C3%B3n%2C_por_Bartolom%C3%A9_Esteban_Murillo.jpg",
+      year: "1472-1475",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Annunciation_%28Leonardo%29_%28cropped%29.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },
@@ -570,7 +570,7 @@ export const typologies: Typology[] = [
       artist: "Govert Flinck",
       title: "Bathsheba Makes an Appeal to David",
       year: "1651",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Govert_Flinck_-_Bathsheba_combing_her_hair.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/4/47/Bathsheba_at_her_toilet_mg_0036.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },
@@ -621,10 +621,10 @@ export const typologies: Typology[] = [
     category: "Prophetic and Ecclesial",
     old_testament: {
       id: "12a",
-      artist: "Daniele da Volterra",
-      title: "Elijah in the Desert",
-      year: "1550",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/5/52/Daniele_da_Volterra_001.jpg",
+      artist: "Circle of Peter Paul Rubens",
+      title: "The Prophet Elijah Nourished by the Angel",
+      year: "c. 1625-1630",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/7/76/Circle_of_Peter_Paul_Rubens_-_The_prophet_Elijah_nourished_by_the_Angel.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },
