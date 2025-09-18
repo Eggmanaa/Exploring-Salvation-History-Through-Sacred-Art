@@ -15,8 +15,8 @@
 
 ## URLs
 - **Development**: https://3000-ipka9h7bqhg5t7www96l9-6532622b.e2b.dev
-- **Production**: (To be deployed to Cloudflare Pages)
-- **GitHub**: (To be connected)
+- **Production**: https://typology.pages.dev
+- **GitHub**: https://github.com/Eggmanaa/Exploring-Salvation-History-Through-Sacred-Art
 
 ## Data Architecture
 - **Data Models**: 
