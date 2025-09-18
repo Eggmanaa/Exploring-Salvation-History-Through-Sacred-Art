@@ -621,10 +621,10 @@ export const typologies: Typology[] = [
     category: "Prophetic and Ecclesial",
     old_testament: {
       id: "12a",
-      artist: "Circle of Peter Paul Rubens",
-      title: "The Prophet Elijah Nourished by the Angel",
-      year: "c. 1625-1630",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/7/76/Circle_of_Peter_Paul_Rubens_-_The_prophet_Elijah_nourished_by_the_Angel.jpg",
+      artist: "Daniele da Volterra",
+      title: "Elijah in the Desert",
+      year: "1550",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/5/52/Daniele_da_Volterra_001.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },
