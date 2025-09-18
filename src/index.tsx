@@ -154,7 +154,7 @@ app.get('/', (c) => {
                 <!-- Description -->
                 <p class="font-crimson text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-8"
                    style="color: #FFFFF0; text-shadow: 2px 2px 3px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.7);">
-                    Discover how the Old Testament prefigures the New through thirty profound connections,
+                    Discover how the Old Testament prefigures the New,
                     revealed through the masterpieces of sacred art spanning two millennia.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">

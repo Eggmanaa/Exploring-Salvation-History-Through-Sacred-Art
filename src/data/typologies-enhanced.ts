@@ -209,10 +209,10 @@ export const typologies: Typology[] = [
     },
     new_testament: {
       id: "4b",
-      artist: "Caravaggio",
-      title: "The Taking of Christ",
-      year: "1602",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/The_Taking_of_Christ-Caravaggio_%28c.1602%29.jpg/1024px-The_Taking_of_Christ-Caravaggio_%28c.1602%29.jpg",
+      artist: "Pieter Bruegel the Elder",
+      title: "The Betrayal of Christ",
+      year: "1565",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Pieter_Bruegel_d._%C3%84._007b.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },
