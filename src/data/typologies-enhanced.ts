@@ -43,9 +43,9 @@ export const typologies: Typology[] = [
     category: "Christological",
     old_testament: {
       id: "1a",
-      artist: "Unknown Artist",
-      title: "The Expulsion of Adam and Eve",
-      year: "c. 1500",
+      artist: "Domenichino",
+      title: "The Rebuke of Adam and Eve",
+      year: "1626",
       image_url: "https://upload.wikimedia.org/wikipedia/commons/6/6e/The_Expulsion_of_Adam_and_Eve_P5282.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
@@ -736,10 +736,10 @@ export const typologies: Typology[] = [
     },
     new_testament: {
       id: "14b",
-      artist: "Leonardo da Vinci",
+      artist: "Vicente Juan Macip",
       title: "The Last Supper",
-      year: "1495-1498",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/0/08/Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg",
+      year: "1562",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/e/ea/The_Last_Supper_by_Vicente_Juan_Macip.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },
@@ -790,10 +790,10 @@ export const typologies: Typology[] = [
     },
     new_testament: {
       id: "15b",
-      artist: "Leonardo da Vinci",
-      title: "The Last Supper",
-      year: "1495",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg/1024px-Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg",
+      artist: "Luca Signorelli",
+      title: "Communion with the Apostles",
+      year: "1512",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Luca_signorelli%2C_comunione_con_gli_apostoli%2C_cortona.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },
@@ -835,10 +835,10 @@ export const typologies: Typology[] = [
     category: "Sacramental",
     old_testament: {
       id: "16a",
-      artist: "Tiepolo",
-      title: "The Gathering of the Manna",
-      year: "1740",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Giovanni_Battista_Tiepolo_-_The_Gathering_of_Manna_-_WGA22286.jpg/800px-Giovanni_Battista_Tiepolo_-_The_Gathering_of_Manna_-_WGA22286.jpg",
+      artist: "Bacchiacca",
+      title: "The Gathering of Manna",
+      year: "1540-1555",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/4/4a/The_Gathering_of_Manna-1540_1555-Bacchiacca.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },
@@ -888,12 +888,12 @@ export const typologies: Typology[] = [
     category: "Sacramental",
     old_testament: {
       id: "17a",
-      artist: "William Holman Hunt",
-      title: "The Golden Table",
-      year: "1860",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Holman_Hunt_Light_of_the_World.jpg/600px-Holman_Hunt_Light_of_the_World.jpg",
-      source: "Wikimedia Commons",
-      license: "Public Domain"
+      artist: "Aaron Eggman",
+      title: "The Bread of the Presence",
+      year: "2025",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Melchizedek_Blessing_Abraham_by_Peter_Paul_Rubens.jpg",
+      source: "AI Generated",
+      license: "Creative Commons"
     },
     new_testament: {
       id: "17b",
@@ -1107,10 +1107,10 @@ export const typologies: Typology[] = [
     },
     new_testament: {
       id: "21b",
-      artist: "El Greco",
+      artist: "Jean II Restout",
       title: "Pentecost",
-      year: "1600",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/El_Greco_-_Pentecost_-_WGA10556.jpg/800px-El_Greco_-_Pentecost_-_WGA10556.jpg",
+      year: "1732",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Jean_II_Restout_-_Pentecost_-_WGA19318.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },

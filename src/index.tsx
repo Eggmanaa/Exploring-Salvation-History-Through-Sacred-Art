@@ -265,7 +265,7 @@ app.get('/', (c) => {
                 <div class="w-32 h-1 bg-gold mx-auto mb-8"></div>
                 
                 <p class="font-crimson text-ivory text-lg leading-relaxed mb-6">
-                    This digital cathedral presents thirty typological connections between the Old and New Testaments,
+                    This digital cathedral presents twenty-one comprehensive typological connections between the Old and New Testaments,
                     each illustrated through masterworks of sacred art from the world's greatest museums and churches.
                 </p>
                 
@@ -277,15 +277,15 @@ app.get('/', (c) => {
                 <div class="flex justify-center space-x-8">
                     <div class="text-center">
                         <i class="fas fa-palette text-gold text-3xl mb-2"></i>
-                        <p class="font-cinzel text-ivory">60 Artworks</p>
+                        <p class="font-cinzel text-ivory">42 Artworks</p>
                     </div>
                     <div class="text-center">
                         <i class="fas fa-book-bible text-gold text-3xl mb-2"></i>
-                        <p class="font-cinzel text-ivory">30 Typologies</p>
+                        <p class="font-cinzel text-ivory">21 Typologies</p>
                     </div>
                     <div class="text-center">
                         <i class="fas fa-history text-gold text-3xl mb-2"></i>
-                        <p class="font-cinzel text-ivory">2000 Years</p>
+                        <p class="font-cinzel text-ivory">4 Categories</p>
                     </div>
                 </div>
             </div>
