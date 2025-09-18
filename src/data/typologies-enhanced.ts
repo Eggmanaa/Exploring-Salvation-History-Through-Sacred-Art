@@ -43,19 +43,19 @@ export const typologies: Typology[] = [
     category: "Christological",
     old_testament: {
       id: "1a",
-      artist: "Albrecht Dürer",
-      title: "Adam and Eve",
-      year: "1504",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Albrecht_D%C3%BCrer_-_The_Fall_of_Man_%28Adam_and_Eve%29_-_Google_Art_Project.jpg/800px-Albrecht_D%C3%BCrer_-_The_Fall_of_Man_%28Adam_and_Eve%29_-_Google_Art_Project.jpg",
+      artist: "Unknown Artist",
+      title: "The Expulsion of Adam and Eve",
+      year: "c. 1500",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/6/6e/The_Expulsion_of_Adam_and_Eve_P5282.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },
     new_testament: {
       id: "1b",
-      artist: "Albrecht Dürer",
-      title: "Christ as the Man of Sorrows",
-      year: "1493",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Man_of_Sorrows_by_A.Durer.jpg/800px-Man_of_Sorrows_by_A.Durer.jpg",
+      artist: "Peter Paul Rubens",
+      title: "Christ on the Cross between the Two Thieves",
+      year: "1620",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/9/95/Peter_Paul_Rubens_-_Christ_on_the_Cross_between_the_Two_Thieves_-_WGA20235.jpg",
       source: "Wikimedia Commons",
       license: "Public Domain"
     },
