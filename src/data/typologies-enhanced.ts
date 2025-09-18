@@ -891,7 +891,7 @@ export const typologies: Typology[] = [
       artist: "Aaron Eggman",
       title: "The Bread of the Presence",
       year: "2025",
-      image_url: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Melchizedek_Blessing_Abraham_by_Peter_Paul_Rubens.jpg",
+      image_url: "https://page.gensparksite.com/v1/base64_upload/e971381670ae283b172c8803e9bbfaa0",
       source: "AI Generated",
       license: "Creative Commons"
     },
@@ -949,12 +949,12 @@ export const typologies: Typology[] = [
     },
     new_testament: {
       id: "18b",
-      artist: "Salvador Dalí",
-      title: "The Sacrament of the Last Supper",
-      year: "1955",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Dali_Sacrament.jpg/1024px-Dali_Sacrament.jpg",
+      artist: "Leonardo da Vinci",
+      title: "The Last Supper",
+      year: "1495-1498",
+      image_url: "https://upload.wikimedia.org/wikipedia/commons/6/67/The_Last_Supper_Leonardo_Da_Vinci_-_High_Resolution.jpg",
       source: "Wikimedia Commons",
-      license: "Fair Use"
+      license: "Public Domain"
     },
     type_description: "Melchizedek, the mysterious priest-king of Salem, offered a sacrifice of bread and wine and blessed Abraham, receiving tithes from him.",
     antitype_description: "Jesus Christ, the eternal High Priest 'according to the order of Melchizedek,' offers Himself under the forms of bread and wine in the Eucharist.",
